@@ -1,3 +1,5 @@
+// geir10
+
 package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
@@ -27,9 +29,12 @@ public class CalculatorTest {
 	@Test
     public void testMultipleNumbers(){
     	assertEquals(6, Calculator.add("1,2,3"));
-    
-    
-
     }
+
+    @Test
+    public void	testNewLine(){
+    	assertEquals(6, Calculator.add("1\n2\n3"));
+    }
+
 }
 
